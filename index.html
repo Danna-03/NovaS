@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nova Store</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-Gn5384xqQ1aoW+hkgxN0b83Zfu80kQwhSUv2hfxv6XLi9Hq1OPaOR5qkKydZ5PbSM9RvhqlGc1rgQuc9cx4lLw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: 'Courier New', monospace;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+
+        header {
+            background-color: #f5f5dc;
+            color: #8a2be2;
+            padding: 20px;
+            text-align: center;
+            width: 100%;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        header h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            color: #4b0082;
+            transition: color 0.3s;
+        }
+
+        header a {
+            text-decoration: none;
+            color: #8a2be2;
+            margin: 0 20px;
+            transition: color 0.3s;
+        }
+
+        header a:hover {
+            color: #4b0082;
+        }
+
+        #main-content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        #main-content div {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        #main-content h1 {
+            font-size: 90px;
+            margin: 0;
+            margin-bottom: 30px;
+            margin-left: 200px;
+            margin-right: 200px;
+            color: #8a2be2;
+        }
+
+        #main-content a {
+            font-size: 20px;
+            text-decoration: none;
+            color: #8a2be2;
+            cursor: pointer;
+            margin-left: 300px;
+            padding: 12px 20px;
+            background-color: transparent;
+            border: 1px solid #8a2be2;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        #main-content a:hover {
+            background-color: #8a2be2;
+            color: #fff;
+        }
+
+        #main-content img {
+            max-width: 85%;
+            height: auto;
+            border-radius: 8px;
+            margin-right: 40px;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .facebook-button {
+            display: flex;
+            align-items: center;
+            background-color: #3b5998;
+            color: #fff;
+            padding: 10px 15px;
+            border: 1px solid #3b5998;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+        }
+
+        .facebook-button i {
+            margin-right: 10px;
+        }
+
+        .facebook-button:hover {
+            background-color: #2d4373;
+        }
+
+        @media screen and (max-width: 768px) {
+            #main-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            #main-content div {
+                text-align: center;
+            }
+
+            #main-content h1 {
+                font-size: 6vw;
+                margin-bottom: 2vw;
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            #main-content a {
+                font-size: 3vw;
+                margin-left: 0;
+            }
+
+            #main-content img {
+                max-width: 100%;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2 style="color: #4b0082;">¡Bienvenidas!</h2>
+        <a href="formulario.html" style="font-weight: bold;">Formulario</a>
+        <a href="tabla_productos.html" style="font-weight: bold;">Ver Productos</a>
+    </header>
+
+    <div id="main-content">
+        <div>
+            <h1>NOVA </h1>
+            <h1>STORE </h1>
+            <a href="pagina1.html">Ir</a>
+        </div>
+        <img src="img/descarga.jpeg" alt="Logo Luisa Store">
+    </div>
+    </div>
+
+    <footer>
+        <span style="font-size: 1.2em;">@NovaStore</span>
+        <a href="aqui va un link" target="_blank" class="facebook-button">
+            <i class="fab fa-facebook-square"></i>
+            Síguenos en Facebook
+        </a>
+    </footer>
+
+</body>
+</html>
